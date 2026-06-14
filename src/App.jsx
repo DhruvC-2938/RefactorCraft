@@ -1,6 +1,6 @@
 import { useState, useRef } from 'react';
 import Editor from "@monaco-editor/react";
-import LandingPage from './components/LandingPage';
+import LandingPage from './components/landingPage';
 import FileExplorer from './components/fileExplorer';
 import ComplexityScorer from './components/complexityScorer';
 import CodeCheckerQueue from './components/codeChecker';
