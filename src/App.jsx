@@ -362,4 +362,4 @@ function NavItem({ icon, active, onClick, label }) {
       {active && <div className="absolute -left-4 w-1 h-8 bg-indigo-500 rounded-r-full" />}
     </button>
   );
-}
+}// redeploy
