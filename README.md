@@ -1,4 +1,6 @@
-# RefactorCraft 🛠️
+<p align="center">
+  # RefactorCraft 🛠️
+  </p>
 
 An AI-powered static code analysis and refactoring assistant built with React.
 
