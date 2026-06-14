@@ -22,48 +22,55 @@ Instead of manually searching through files and dependencies, RefactorCraft auto
 
 ## ✨ Key Features
 
-### 📂 Project Explorer
+### 📂 Code File Explorer
 - Collapsible folder tree structure
-- Fast navigation through large codebases
-- File selection and preview support
+- Fast project navigation
+- Tracks file relationships
+- Displays project hierarchy visually
 
-### 🛡️ Code Checker Queue
-- Scans files one by one
-- Detects complex conditional logic
-- Highlights refactoring opportunities
-- Prioritizes problematic files
+### ↩️ Fix History (Undo / Redo)
+- Maintains code modification history
+- Allows rollback of previous fixes
+- Stack-based history management
 
-### 📊 Function Complexity Ranking
+### 📋 Code Checker Queue
+- Processes files in priority order
+- Analyzes larger files first
+- Detects code quality issues
+- Generates actionable refactoring suggestions
+
+### ⚡ Instant Word Checker
+- Validates variable names instantly
+- Detects invalid naming patterns
+- Follows JavaScript naming conventions
+- Provides real-time feedback
+
+### 📊 Complexity Scorer
 - Ranks functions by difficulty
 - Measures:
-  - IF statements
+  - IF Statements
   - Loops
-  - Switch statements
-  - Nesting depth
-- Jump directly to source code
+  - Switch Statements
+  - Nesting Depth
+- Helps identify high-risk code
 
-### 🗺️ Dependency Connection Map
+### 🗺️ Code Connection Map
 - Visual dependency graph
-- Displays imports between files
-- Interactive React Flow visualization
-- Helps understand project architecture
+- Shows file-to-file imports
+- Built using React Flow
+- Interactive relationship explorer
+
+### 🔒 Loop Safety Net
+- Detects dangerous looping patterns
+- Prevents infinite loop execution
+- Highlights problematic logic
+- Improves application stability
 
 ### ✏️ Rename Helper
-- Finds variable usage across files
-- Safe renaming assistance
-- Refactoring validation support
-
-### 💻 Monaco Code Editor
-- Syntax highlighting
-- Code navigation
-- Direct editing experience
-- Mac-style editor interface
-
-### 📜 Undo / Redo History
-- Tracks code changes
-- Supports rollback of edits
-- Maintains fix history
-
+- Searches variable usage across files
+- Validates new names
+- Prevents naming conflicts
+- Simplifies refactoring
 ---
 
 ## 💻 Tech Stack
