@@ -91,58 +91,85 @@ This project is built using modern frontend technologies.
 
 ## 📸 Screenshots
 
-### Landing Page
-(Add Screenshot)
+### Landing Page 
+<img width="1710" height="978" alt="Screenshot 2026-06-14 at 10 58 25 AM" src="https://github.com/user-attachments/assets/560aed04-7ce0-4370-ab4c-97c7ca40006b" />
 
-### File Explorer
-(Add Screenshot)
+
+### File Explorer and Word Checker
+<img width="1710" height="988" alt="Screenshot 2026-06-14 at 11 00 56 AM" src="https://github.com/user-attachments/assets/b225ac2a-2d2b-4aa4-b290-b92cf23be88a" />
+
 
 ### Complexity Ranking
-(Add Screenshot)
+<img width="1709" height="982" alt="Screenshot 2026-06-14 at 10 59 29 AM" src="https://github.com/user-attachments/assets/0b952181-4e0d-41dd-96f6-e8c96a99cafc" />
+
 
 ### Dependency Map
-(Add Screenshot)
+<img width="1710" height="981" alt="Screenshot 2026-06-14 at 10 59 53 AM" src="https://github.com/user-attachments/assets/8ea8b6bf-42e5-4138-92c7-72f2796a45f4" />
+
 
 ### Monaco Editor
-(Add Screenshot)
+<img width="1178" height="916" alt="Screenshot 2026-06-14 at 11 00 11 AM" src="https://github.com/user-attachments/assets/788ed580-a684-471d-8933-a79334280371" />
 
-### Rename Helper
-(Add Screenshot)
+
+### Checker Queue
+<img width="1710" height="981" alt="Screenshot 2026-06-14 at 11 01 12 AM" src="https://github.com/user-attachments/assets/f6779371-e8db-41e4-bdca-11c5b79e742f" />
+ 
+### Fix History / Loop Safety Net / Rename Helper
+<img width="1710" height="983" alt="Screenshot 2026-06-14 at 11 02 30 AM" src="https://github.com/user-attachments/assets/be171627-ef1b-4b88-a87c-ef8ceab24ab2" />
+
 
 ---
 
 ## 🏗️ Architecture Overview
 
 ```text
-Landing Page
-      │
-      ▼
-Project Upload
-      │
-      ▼
-Project Parser
-      │
- ┌────┼───────────┐
- ▼    ▼           ▼
+## 🏗️ Architecture Overview
 
-Checker Queue   Complexity
-                  Ranking
+The application follows a modular component-based architecture.
 
- ▼               ▼
-Code Issues    Function Analysis
+### 1. Presentation Layer
+Responsible for rendering the user interface.
 
- └────┬───────────┘
-      ▼
+- landingPage.jsx
+- fileExplorer.jsx
+- codeChecker.jsx
+- complexityScorer.jsx
+- codeMap.jsx
+- renameHelper.jsx
+- loopSafety.jsx
+- fixHistory.jsx
+- wordChecker.jsx
 
-Monaco Editor
+### 2. Analysis Layer
+Responsible for code inspection and complexity calculations.
 
-      ▼
+- complexityAnalyzer.js
+- Loop Detection Engine
+- Rename Validation Engine
 
-Rename Helper
+### 3. Queue Management Layer
+Processes files in priority order.
 
-      ▼
+- codeQueue.js
+- codeChecker.jsx
 
-Dependency Map
+### 4. Visualization Layer
+Displays code relationships and complexity rankings.
+
+- complexityScorer.jsx
+- codeMap.jsx
+
+### 5. State Management Layer
+Maintains application state using React Hooks.
+
+- useState()
+- useEffect()
+
+### 6. Editor Layer
+Provides source code viewing and navigation.
+
+- Monaco Editor
+- Function Navigation System
 ```
 
 ---
@@ -196,6 +223,8 @@ http://localhost:5173
 ✅ Checker Queue
 
 ✅ Monaco Editor
+
+✅ Loop Safety Net<
 
 ✅ Undo/Redo Support
 
