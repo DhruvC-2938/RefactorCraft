@@ -130,11 +130,11 @@ This project is built using modern frontend technologies.
 ## 🏗️ Architecture Overview
 
 ```text
-## 🏗️ Architecture Overview
+🏗️ Architecture Overview
 
 The application follows a modular component-based architecture.
 
-### 1. Presentation Layer
+ 1. Presentation Layer
 Responsible for rendering the user interface.
 
 - landingPage.jsx
@@ -147,32 +147,32 @@ Responsible for rendering the user interface.
 - fixHistory.jsx
 - wordChecker.jsx
 
-### 2. Analysis Layer
+ 2. Analysis Layer
 Responsible for code inspection and complexity calculations.
 
 - complexityAnalyzer.js
 - Loop Detection Engine
 - Rename Validation Engine
 
-### 3. Queue Management Layer
+ 3. Queue Management Layer
 Processes files in priority order.
 
 - codeQueue.js
 - codeChecker.jsx
 
-### 4. Visualization Layer
+ 4. Visualization Layer
 Displays code relationships and complexity rankings.
 
 - complexityScorer.jsx
 - codeMap.jsx
 
-### 5. State Management Layer
+ 5. State Management Layer
 Maintains application state using React Hooks.
 
 - useState()
 - useEffect()
 
-### 6. Editor Layer
+ 6. Editor Layer
 Provides source code viewing and navigation.
 
 - Monaco Editor
